@@ -9,3 +9,15 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\bin\Debug\netco
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.dll
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.pdb
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.genruntimeconfig.cache
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.deps.json
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.dll
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.pdb
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.csprojAssemblyReference.cache
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.AssemblyInfoInputs.cache
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.AssemblyInfo.cs
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.dll
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.pdb
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.runtimeconfig.json
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.runtimeconfig.dev.json
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.genruntimeconfig.cache
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.csproj.CoreCompileInputs.cache

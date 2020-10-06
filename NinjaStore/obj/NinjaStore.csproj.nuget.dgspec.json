@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore\\NinjaStore.csproj": {}
+    "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\NinjaStore.csproj": {}
   },
   "projects": {
-    "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore\\NinjaStore.csproj": {
+    "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\NinjaStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore\\NinjaStore.csproj",
+        "projectUniqueName": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\NinjaStore.csproj",
         "projectName": "NinjaStore",
-        "projectPath": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore\\NinjaStore.csproj",
-        "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-        "outputPath": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore\\obj\\",
+        "projectPath": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\NinjaStore.csproj",
+        "packagesPath": "C:\\Users\\woutp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\PROGRAM FILES\\DOTNET\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\woutp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +37,36 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
