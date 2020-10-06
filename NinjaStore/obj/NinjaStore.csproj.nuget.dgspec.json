@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\NinjaStore.csproj": {}
+    "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore2\\NinjaStore\\NinjaStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\NinjaStore.csproj": {
+    "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore2\\NinjaStore\\NinjaStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\NinjaStore.csproj",
+        "projectUniqueName": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore2\\NinjaStore\\NinjaStore.csproj",
         "projectName": "NinjaStore",
-        "projectPath": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\NinjaStore.csproj",
-        "packagesPath": "C:\\Users\\woutp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore\\obj\\",
+        "projectPath": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore2\\NinjaStore\\NinjaStore.csproj",
+        "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
+        "outputPath": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore2\\NinjaStore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\PROGRAM FILES\\DOTNET\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\woutp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
