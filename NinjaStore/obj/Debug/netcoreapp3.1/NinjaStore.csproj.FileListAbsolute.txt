@@ -167,7 +167,6 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\bin\Debu
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.csprojAssemblyReference.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.AssemblyInfoInputs.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.AssemblyInfo.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.RazorAssemblyInfo.cache

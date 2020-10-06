@@ -32,4 +32,3 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.pdb
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.genruntimeconfig.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.csproj.CoreCompileInputs.cache
-E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.csprojAssemblyReference.cache
