@@ -15,7 +15,7 @@ namespace NinjaStore.Data
 
 		protected override void OnConfiguring(DbContextOptionsBuilder options)
 		{
-			options.UseSqlServer("Server=localhost;Database=SuperShop;Trusted_Connection=true");
+			options.UseSqlServer("Server=localhost;Database=NinjaStore;Trusted_Connection=true");
 		}
 	}
 }

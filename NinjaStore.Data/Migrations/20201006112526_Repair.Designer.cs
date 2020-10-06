@@ -9,8 +9,8 @@ using NinjaStore.Data;
 namespace NinjaStore.Data.Migrations
 {
     [DbContext(typeof(NinjaStoreDbContext))]
-    [Migration("20201006111723_asdf")]
-    partial class asdf
+    [Migration("20201006112526_Repair")]
+    partial class Repair
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

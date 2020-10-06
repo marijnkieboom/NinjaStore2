@@ -170,8 +170,6 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\bin\Debu
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.csprojAssemblyReference.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.AssemblyInfoInputs.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.AssemblyInfo.cs
-E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.csproj.CoreCompileInputs.cache
-E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.MvcApplicationPartsAssemblyInfo.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.RazorAssemblyInfo.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.RazorAssemblyInfo.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.TagHelpers.input.cache
@@ -193,3 +191,5 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debu
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.dll
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.pdb
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.genruntimeconfig.cache
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.csproj.CoreCompileInputs.cache
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.MvcApplicationPartsAssemblyInfo.cache

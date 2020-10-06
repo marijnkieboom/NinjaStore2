@@ -28,7 +28,8 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\bin
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.pdb
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.AssemblyInfoInputs.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.AssemblyInfo.cs
-E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.csproj.CoreCompileInputs.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.dll
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.pdb
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.genruntimeconfig.cache
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.csproj.CoreCompileInputs.cache
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.csprojAssemblyReference.cache

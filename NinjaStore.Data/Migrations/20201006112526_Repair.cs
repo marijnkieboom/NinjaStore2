@@ -2,7 +2,7 @@
 
 namespace NinjaStore.Data.Migrations
 {
-    public partial class asdf : Migration
+    public partial class Repair : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
