@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaStore", "NinjaStore\NinjaStore.csproj", "{9298E7A6-8D74-4D0C-83CF-85AA54621D24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaStore.Data", "NinjaStore.Data\NinjaStore.Data.csproj", "{6CCB466C-0EF3-45DB-8D7F-4FA197C3A17F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9298E7A6-8D74-4D0C-83CF-85AA54621D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9298E7A6-8D74-4D0C-83CF-85AA54621D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9298E7A6-8D74-4D0C-83CF-85AA54621D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9298E7A6-8D74-4D0C-83CF-85AA54621D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CCB466C-0EF3-45DB-8D7F-4FA197C3A17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCB466C-0EF3-45DB-8D7F-4FA197C3A17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCB466C-0EF3-45DB-8D7F-4FA197C3A17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCB466C-0EF3-45DB-8D7F-4FA197C3A17F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36E82395-D459-4FFF-B8C0-B3043F156217}
+	EndGlobalSection
+EndGlobal

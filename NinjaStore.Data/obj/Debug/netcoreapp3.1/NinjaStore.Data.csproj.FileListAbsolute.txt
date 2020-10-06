@@ -1,0 +1,11 @@
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.AssemblyInfoInputs.cache
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.AssemblyInfo.cs
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.csproj.CoreCompileInputs.cache
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.deps.json
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.runtimeconfig.json
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.runtimeconfig.dev.json
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.dll
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\bin\Debug\netcoreapp3.1\NinjaStore.Data.pdb
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.dll
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.pdb
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore.Data\obj\Debug\netcoreapp3.1\NinjaStore.Data.genruntimeconfig.cache
