@@ -25,10 +25,13 @@ namespace NinjaStore.Data.Models
 		public int Value { get; set; }
 		[Required]
 		public Category Category { get; set; }
+		[Required]
 		public int Strength { get; set; }
+		[Required]
 		public int Intelligence { get; set; }
+		[Required]
 		public int Agility { get; set; }
 
-		public virtual ICollection<NinjaEquipment> OnderdeelVan { get; set; }
+		public virtual IEnumerable<NinjaEquipment> OnderdeelVan { get; set; }
 	}
 }

@@ -10,10 +10,11 @@ namespace NinjaStore.Data.Models
 	{
 		[Key]
 		public int NinjaId { get; set; }
+		[Required]
 		public string Name { get; set; }
 		[Required]
 		public int Gold { get; set; }
 
-		public virtual ICollection<NinjaEquipment> Bevat { get; set; }
+		public virtual IEnumerable<NinjaEquipment> Bevat { get; set; }
 	}
 }

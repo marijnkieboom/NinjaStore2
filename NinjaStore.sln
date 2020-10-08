@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaStore", "NinjaStore\NinjaStore.csproj", "{9298E7A6-8D74-4D0C-83CF-85AA54621D24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NinjaStore.Web", "NinjaStore\NinjaStore.Web.csproj", "{9298E7A6-8D74-4D0C-83CF-85AA54621D24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaStore.Data", "NinjaStore.Data\NinjaStore.Data.csproj", "{6CCB466C-0EF3-45DB-8D7F-4FA197C3A17F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NinjaStore.Data", "NinjaStore.Data\NinjaStore.Data.csproj", "{6CCB466C-0EF3-45DB-8D7F-4FA197C3A17F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
