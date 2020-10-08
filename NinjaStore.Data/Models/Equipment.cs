@@ -24,7 +24,7 @@ namespace NinjaStore.Data.Models
 		[Required]
 		public int Value { get; set; }
 		[Required]
-		public Category Category { get; set; }
+		public String Category { get; set; }
 		[Required]
 		public int Strength { get; set; }
 		[Required]
