@@ -1,9 +1,5 @@
-﻿using NinjaStore.Data.Models;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.InteropServices;
-using System.Text;
 
 namespace NinjaStore.Data.Models
 {
@@ -22,9 +18,11 @@ namespace NinjaStore.Data.Models
 		[Key]
 		public int EquipmentId { get; set; }
 		[Required]
+		public string Name { get; set; }
+		[Required]
 		public int Value { get; set; }
 		[Required]
-		public String Category { get; set; }
+		public Category Category { get; set; }
 		[Required]
 		public int Strength { get; set; }
 		[Required]

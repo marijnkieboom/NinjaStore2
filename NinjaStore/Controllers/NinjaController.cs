@@ -6,10 +6,11 @@ namespace NinjaStore.Controllers
 {
 	public class NinjaController : Controller
 	{
-		NinjaRepositorySql ninjaRepositorySql = new NinjaRepositorySql();
+		readonly NinjaRepositorySql ninjaRepositorySql = new NinjaRepositorySql();
+		readonly EquipmentRepository equipmentRepositorySql = new EquipmentRepository();
 		public IActionResult Index()
 		{
-			
+
 			return View(ninjaRepositorySql.GetAll());
 		}
 
@@ -30,6 +31,7 @@ namespace NinjaStore.Controllers
 			if (id.HasValue)
 			{
 				var ninja = ninjaRepositorySql.GetOne(id.Value);
+				ViewBag.equipmentList = equipmentRepositorySql.GetAll();
 				return View(ninja);
 			}
 			return RedirectToAction("Index");

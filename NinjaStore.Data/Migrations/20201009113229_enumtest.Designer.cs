@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NinjaStore.Data;
 
 namespace NinjaStore.Data.Migrations
 {
     [DbContext(typeof(NinjaStoreDbContext))]
-    partial class NinjaStoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201009113229_enumtest")]
+    partial class enumtest
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,10 +35,6 @@ namespace NinjaStore.Data.Migrations
 
                     b.Property<int>("Intelligence")
                         .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Strength")
                         .HasColumnType("int");

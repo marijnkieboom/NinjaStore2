@@ -1,5 +1,3 @@
-using System;
-
 namespace NinjaStore.Models
 {
 	public class ErrorViewModel

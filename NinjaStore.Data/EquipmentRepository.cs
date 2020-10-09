@@ -1,14 +1,11 @@
-﻿using Microsoft.Extensions.Caching.Memory;
-using NinjaStore.Data.Models;
-using System;
+﻿using NinjaStore.Data.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace NinjaStore.Data
 {
-    public class EquipmentRepository
-    {
+	public class EquipmentRepository
+	{
 		public void Create(Equipment equipment)
 		{
 			using (var context = new NinjaStoreDbContext())

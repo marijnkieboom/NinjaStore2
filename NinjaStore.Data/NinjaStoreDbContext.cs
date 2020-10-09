@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NinjaStore.Data.Models;
-using System;
 
 namespace NinjaStore.Data
 {

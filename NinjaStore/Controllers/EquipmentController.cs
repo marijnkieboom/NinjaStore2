@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using NinjaStore.Data;
 using NinjaStore.Data.Models;
 
 namespace NinjaStore.Web.Controllers
 {
-    public class EquipmentController : Controller
-    {
-        // GET: EquipmentController
-        EquipmentRepository equipmentRepository = new EquipmentRepository();
-        public ActionResult Index()
-        {
-            var model = equipmentRepository.GetAll();
-            return View(model);
-        }
+	public class EquipmentController : Controller
+	{
+		// GET: EquipmentController
+		readonly EquipmentRepository equipmentRepository = new EquipmentRepository();
+		public ActionResult Index()
+		{
+			var model = equipmentRepository.GetAll();
+			return View(model);
+		}
 
 		public IActionResult Create()
 		{

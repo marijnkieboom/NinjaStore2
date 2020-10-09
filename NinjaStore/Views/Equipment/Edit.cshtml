@@ -14,14 +14,23 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="EquipmentId" />
             <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Value" class="control-label"></label>
                 <input asp-for="Value" class="form-control" />
                 <span asp-validation-for="Value" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
-                <span asp-validation-for="Category" class="text-danger"></span>
+
+                <select asp-for="Category" class="form-control" asp-items="Html.GetEnumSelectList<NinjaStore.Data.Models.Category>()">
+                    <option selected="selected" value="">Please select</option>
+                </select>
+                <span asp-validation-for="Category" class="text-danger" />
+
             </div>
             <div class="form-group">
                 <label asp-for="Strength" class="control-label"></label>

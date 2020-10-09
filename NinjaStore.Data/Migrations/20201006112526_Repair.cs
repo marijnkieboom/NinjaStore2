@@ -2,16 +2,16 @@
 
 namespace NinjaStore.Data.Migrations
 {
-    public partial class Repair : Migration
-    {
-        protected override void Up(MigrationBuilder migrationBuilder)
-        {
+	public partial class Repair : Migration
+	{
+		protected override void Up(MigrationBuilder migrationBuilder)
+		{
 
-        }
+		}
 
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
+		protected override void Down(MigrationBuilder migrationBuilder)
+		{
 
-        }
-    }
+		}
+	}
 }
