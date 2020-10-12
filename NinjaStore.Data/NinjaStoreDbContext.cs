@@ -25,7 +25,7 @@ namespace NinjaStore.Data
 
 			modelBuilder.Entity<NinjaEquipment>()
 				.HasOne(pt => pt.Ninja)
-				.WithMany(p => p.Bevat)
+				.WithMany(p => p.Bevat)	
 				.HasForeignKey(pt => pt.NinjaId);
 
 			modelBuilder.Entity<NinjaEquipment>()
