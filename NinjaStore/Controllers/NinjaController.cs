@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Identity;
 using NinjaStore.Data;
 using NinjaStore.Data.Models;
 
@@ -8,6 +9,7 @@ namespace NinjaStore.Controllers
 	{
 		readonly NinjaRepositorySql ninjaRepositorySql = new NinjaRepositorySql();
 		readonly EquipmentRepository equipmentRepositorySql = new EquipmentRepository();
+		readonly NinjaEquipmentRepositorySql ninjaEquipmentRepositorySql = new NinjaEquipmentRepositorySql();
 		public IActionResult Index()
 		{
 
@@ -31,7 +33,7 @@ namespace NinjaStore.Controllers
 			if (id.HasValue)
 			{
 				var ninja = ninjaRepositorySql.GetOne(id.Value);
-				ViewBag.equipmentList = equipmentRepositorySql.GetAll();
+				ViewBag.BuyableItems = ninjaEquipmentRepositorySql.buyAbleEquipment(id.Value);
 				return View(ninja);
 			}
 			return RedirectToAction("Index");
@@ -64,6 +66,9 @@ namespace NinjaStore.Controllers
 			{
 				return RedirectToAction("Index");
 			}
+			
+			ninjaEquipmentRepositorySql.ShowEquipment(id.Value);
+
 
 			return View(ninja);
 		}
@@ -94,5 +99,7 @@ namespace NinjaStore.Controllers
 			ninjaRepositorySql.Delete(id);
 			return RedirectToAction("Index");
 		}
+
+		
 	}
 }

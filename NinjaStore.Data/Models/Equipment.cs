@@ -30,6 +30,6 @@ namespace NinjaStore.Data.Models
 		[Required]
 		public int Agility { get; set; }
 
-		public virtual IEnumerable<NinjaEquipment> OnderdeelVan { get; set; }
+		public virtual List<NinjaEquipment> OnderdeelVan { get; set; }
 	}
 }

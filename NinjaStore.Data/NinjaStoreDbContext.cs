@@ -11,6 +11,7 @@ namespace NinjaStore.Data
 
 		public DbSet<Equipment> Equipment { get; set; }
 		public DbSet<Ninja> Ninjas { get; set; }
+		public DbSet<NinjaEquipment> NinjaEquipment { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder options)
 		{

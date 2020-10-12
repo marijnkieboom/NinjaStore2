@@ -30,15 +30,11 @@
     </div>
 </div>
 
-@{ 
-    foreach (var equipment in ViewBag.equipmentList )
+@{ foreach (var item in ViewBag.buyableItems)
     {
-        <div>
-            <p>@equipment.Name</p>
-        </div>
+        <p> @item.Name</p>
     }
 }
-
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

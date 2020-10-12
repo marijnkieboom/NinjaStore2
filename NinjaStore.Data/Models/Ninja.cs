@@ -12,6 +12,6 @@ namespace NinjaStore.Data.Models
 		[Required]
 		public int Gold { get; set; }
 
-		public virtual IEnumerable<NinjaEquipment> Bevat { get; set; }
+		public virtual List<NinjaEquipment> Bevat { get; set; }
 	}
 }
