@@ -33,7 +33,9 @@ namespace NinjaStore.Controllers
 			if (id.HasValue)
 			{
 				var ninja = ninjaRepositorySql.GetOne(id.Value);
-				ViewBag.BuyableItems = ninjaEquipmentRepositorySql.buyAbleEquipment(id.Value);
+				ViewBag.NinjaEquipment = ninjaEquipmentRepositorySql.ShowEquipment(id.Value);
+				ViewBag.AllEquipment = equipmentRepositorySql.GetAll();
+				ViewBag.BuyAbleEquipment = ninjaEquipmentRepositorySql.buyAbleEquipment(id.Value);
 				return View(ninja);
 			}
 			return RedirectToAction("Index");
@@ -100,6 +102,23 @@ namespace NinjaStore.Controllers
 			return RedirectToAction("Index");
 		}
 
-		
+		[HttpPost]
+		public IActionResult BuyItem(int itemId, int ninjaId)
+		{
+			ninjaEquipmentRepositorySql.BuyEquipment(ninjaId, itemId);
+			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
+				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
+		}
+
+
+		[HttpPost]
+		public IActionResult SellItem(int itemId, int ninjaId)
+		{
+			ninjaEquipmentRepositorySql.SellEquipment(ninjaId, itemId);
+			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
+				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
+		}
+
+
 	}
 }

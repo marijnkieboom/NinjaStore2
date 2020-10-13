@@ -30,11 +30,35 @@
     </div>
 </div>
 
-@{ foreach (var item in ViewBag.buyableItems)
+<p>Deze Ninja Bezit:</p>
+@{ foreach (var item in ViewBag.NinjaEquipment)
     {
         <p> @item.Name</p>
+        @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
+        {
+            <input type="hidden" name="itemId" value="@item.EquipmentId" />
+            <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+            <input type="submit" value="verkopen" />
+        }
     }
 }
+
+<p>De Shop Bezit:</p>
+@{ foreach (var item in ViewBag.BuyAbleEquipment)
+    {
+        <p>@item.Name</p>
+        @using (Html.BeginForm("BuyItem", "Ninja", FormMethod.Post))
+        {
+            <input type="hidden" name="itemId" value="@item.EquipmentId" />
+            <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+            <input type="submit" value="kopen" />
+        }
+
+    }
+}
+
+
+
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

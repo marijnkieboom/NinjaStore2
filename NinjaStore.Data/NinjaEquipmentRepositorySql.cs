@@ -1,6 +1,8 @@
-﻿using NinjaStore.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using NinjaStore.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -12,24 +14,11 @@ namespace NinjaStore.Data
 		{
 			using (var context = new NinjaStoreDbContext())
 			{
-			
-				var existingNinja = context.Ninjas.FirstOrDefault(n => n.NinjaId == ninjaId);
+				var ninjaIncludingItems = context.Ninjas.Include(ninja => ninja.Bevat).ThenInclude(e => e.Equipment).First(n => n.NinjaId == ninjaId);
 
+				var ninjaItems = ninjaIncludingItems.Bevat.Select(e => e.Equipment);
 
-				context.Attach(existingNinja);
-
-				context.Entry(existingNinja).Collection(p => p.Bevat).Load();
-				var equipmentVanNinja = existingNinja.Bevat.Select(i => i.EquipmentId);
-				List<Equipment> returnList = new List<Equipment>();
-				foreach(var id in equipmentVanNinja.ToList())
-				{
-					var item = context.Equipment.FirstOrDefault(e => e.EquipmentId == id);
-					returnList.Add(item);
-				}
-			
-				
-				return returnList;
-		
+				return ninjaItems.ToList();
 			}
 		}
 		public bool BuyEquipment(int ninjaId, int equipmentId)
@@ -54,24 +43,37 @@ namespace NinjaStore.Data
 			}
 		}
 
+		public bool SellEquipment(int ninjaId, int equipmentId)
+		{
+			using (var context = new NinjaStoreDbContext())
+			{
+				var ninja = context.Ninjas.FirstOrDefault(n => n.NinjaId == ninjaId);
+				var equipment = context.Equipment.FirstOrDefault(e => e.EquipmentId == equipmentId);
+				NinjaEquipment ninjaEquipment = new NinjaEquipment
+				{
+					Ninja = ninja,
+					Equipment = equipment,
+					NinjaId = ninjaId,
+					EquipmentId = equipmentId
+				};
+
+
+				context.NinjaEquipment.Remove(ninjaEquipment);
+				context.SaveChanges();
+
+				return true;
+			}
+		}
+
 		public List<Equipment> buyAbleEquipment(int ninjaId)
 		{
 			using (var context = new NinjaStoreDbContext())
 			{
-				List<Equipment> returnList = new List<Equipment>();
-				var allEquipment = context.Equipment.ToList();
-				foreach (var item in allEquipment){
-					foreach(var item2 in ShowEquipment(ninjaId))
-					{
-						if(item.EquipmentId == item2.EquipmentId)
-						{
-							break;
-						}
-						returnList.Add(item);
-					}
-				}
-				return returnList;
+				var result = context.Equipment.ToList().Where(n => ShowEquipment(ninjaId).All(n2 => n2.EquipmentId != n.EquipmentId));
+
+				return result.ToList();
 			}
+			
 		}
 	}
 }
