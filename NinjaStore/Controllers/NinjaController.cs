@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Razor.Language;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Identity;
 using NinjaStore.Data;
 using NinjaStore.Data.Models;
@@ -103,20 +104,28 @@ namespace NinjaStore.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult BuyItem(int itemId, int ninjaId)
+		public IActionResult BuyItem(Equipment equipment, Ninja ninja)
 		{
-			ninjaEquipmentRepositorySql.BuyEquipment(ninjaId, itemId);
-			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
-				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
+			if (equipment.Value <= ninja.Gold)
+			{
+				ninjaEquipmentRepositorySql.BuyEquipment(ninja.NinjaId, equipment.EquipmentId);
+				return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
+					new { controller = "Ninja", action = "Edit", Id = ninja.NinjaId }));
+			} else
+            {
+				ViewBag.Error = "dit kan je niet betalen";
+				return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
+					new { controller = "Ninja", action = "Edit", Id = ninja.NinjaId }));
+			}
 		}
 
 
 		[HttpPost]
-		public IActionResult SellItem(int itemId, int ninjaId)
+		public IActionResult SellItem(Equipment equipment, Ninja ninja)
 		{
-			ninjaEquipmentRepositorySql.SellEquipment(ninjaId, itemId);
+			ninjaEquipmentRepositorySql.SellEquipment(ninja.NinjaId, equipment.EquipmentId);
 			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
-				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
+				new { controller = "Ninja", action = "Edit", Id = ninja.NinjaId }));
 		}
 
 
