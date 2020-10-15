@@ -108,7 +108,8 @@ namespace NinjaStore.Controllers
 		{
 			if (equipment.Value <= ninja.Gold)
 			{
-				ninjaEquipmentRepositorySql.BuyEquipment(ninja.NinjaId, equipment.EquipmentId);
+				
+				ninjaEquipmentRepositorySql.BuyEquipment(ninja, equipment);
 				return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
 					new { controller = "Ninja", action = "Edit", Id = ninja.NinjaId }));
 			} else

@@ -21,21 +21,24 @@ namespace NinjaStore.Data
 				return ninjaItems.ToList();
 			}
 		}
-		public bool BuyEquipment(int ninjaId, int equipmentId)
+		public bool BuyEquipment(Ninja ninja, Equipment equipment)
 		{
 			using (var context = new NinjaStoreDbContext())
 			{
-				var ninja = context.Ninjas.FirstOrDefault(n => n.NinjaId == ninjaId);
-				var equipment = context.Equipment.FirstOrDefault(e => e.EquipmentId == equipmentId);
+
+				
 				NinjaEquipment ninjaEquipment = new NinjaEquipment
 				{
 					Ninja = ninja,
 					Equipment = equipment,
-					NinjaId = ninjaId,
-					EquipmentId = equipmentId
+					NinjaId = ninja.NinjaId,
+					EquipmentId = equipment.EquipmentId
 				};
-
-
+				ninja.Gold = ninja.Gold - equipment.Value;
+				;
+				var entity = context.Ninjas.Attach(ninja);
+				entity.Entry(ninja).State = EntityState.Modified;
+				context.Ninjas.Update(ninja);
 				context.NinjaEquipment.Add(ninjaEquipment);
 				context.SaveChanges();
 
@@ -56,7 +59,9 @@ namespace NinjaStore.Data
 					NinjaId = ninjaId,
 					EquipmentId = equipmentId
 				};
-
+				ninja.Gold = ninja.Gold + equipment.Value;
+				context.Attach(ninja);
+				context.Ninjas.Update(ninja);
 
 				context.NinjaEquipment.Remove(ninjaEquipment);
 				context.SaveChanges();
