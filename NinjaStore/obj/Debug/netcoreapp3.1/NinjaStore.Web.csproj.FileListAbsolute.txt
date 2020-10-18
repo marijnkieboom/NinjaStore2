@@ -297,7 +297,6 @@ C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Create.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Delete.cshtml.g.cs
-C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Details.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Edit.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Index.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs

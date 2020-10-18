@@ -36,6 +36,15 @@ namespace NinjaStore.Controllers
 				ViewBag.NinjaEquipment = ninjaEquipmentRepositorySql.ShowEquipment(id.Value);
 				ViewBag.AllEquipment = equipmentRepositorySql.GetAll();
 				ViewBag.BuyAbleEquipment = ninjaEquipmentRepositorySql.buyAbleEquipment(id.Value);
+				ViewBag.Head = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Head);
+				ViewBag.Hands = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Hand);
+				ViewBag.Feet = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Feet);
+				ViewBag.Necklace = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Necklace);
+				ViewBag.Chest = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Chest);
+				ViewBag.Ring = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Ring);
+				ViewBag.Strength = ninjaEquipmentRepositorySql.getPoints(id.Value, "Strength");
+				ViewBag.Agility = ninjaEquipmentRepositorySql.getPoints(id.Value, "Agility");
+				ViewBag.Intelligence = ninjaEquipmentRepositorySql.getPoints(id.Value, "Intelligence");
 				return View(ninja);
 			}
 			return RedirectToAction("Index");
@@ -105,9 +114,22 @@ namespace NinjaStore.Controllers
 		[HttpPost]
 		public IActionResult BuyItem(int itemId, int ninjaId)
 		{
-			ninjaEquipmentRepositorySql.BuyEquipment(ninjaId, itemId);
+			Ninja ninja = ninjaRepositorySql.GetOne(ninjaId);
+			Equipment item = equipmentRepositorySql.GetOne(itemId);
+			if (ninja.Gold >= item.Value)
+			{
+				if(ninjaEquipmentRepositorySql.getOneItem(ninjaId, item.Category) ==null)
+                {
+					ninjaEquipmentRepositorySql.BuyEquipment(ninjaId, itemId);
+				}
+				else
+                {
+					//heeft dit item al
+                }
+				// te weinig  geld
+			}
 			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
-				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
+					new { controller = "Ninja", action = "Edit", Id = ninjaId }));
 		}
 
 
@@ -118,6 +140,8 @@ namespace NinjaStore.Controllers
 			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
 				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
 		}
+
+	
 
 
 	}

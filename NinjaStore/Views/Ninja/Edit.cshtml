@@ -4,42 +4,89 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
 
-<h4>Ninja</h4>
+<h1>@Model.Name </h1>
+<h2>Goud: @Model.Gold</h2>
+<ul>
+    <li>Agility: @ViewBag.Agility</li>
+    <li>Strength: @ViewBag.Strength</li>
+    <li>Intelligence: @ViewBag.Intelligence</li>
+</ul>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input asp-for="NinjaId" type="hidden" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Gold" class="control-label"></label>
-                <input asp-for="Gold" class="form-control" />
-                <span asp-validation-for="Gold" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+
 
 <div class="row">
     <div class="column">
         <div class="equipment">
-
+            @if (ViewBag.Head != null)
+            {
+                var item = ViewBag.Head;
+                <h3>@item.Category: @item.Name</h3>
+                <ul>
+                    <li>Agility: @item.Agility</li>
+                    <li>Strength: @item.Strength</li>
+                    <li>Intelligence: @item.Intelligence</li>
+                </ul>
+                @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
+                {
+                    <input type="hidden" name="itemId" value="@item.EquipmentId" />
+                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="submit" value="verkopen" />
+                }
+            }
+            else
+            {
+                <h2>Head</h2>
+                <p>Geen item in deze catogory</p>
+            }
         </div>
         <div class="equipment">
 
+            @if (ViewBag.Hands != null)
+            {
+                var item = ViewBag.Hands;
+                <h3>@item.Category: @item.Name</h3>
+                <ul>
+                    <li>Agility: @item.Agility</li>
+                    <li>Strength: @item.Strength</li>
+                    <li>Intelligence: @item.Intelligence</li>
+                </ul>
+                @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
+                {
+                    <input type="hidden" name="itemId" value="@item.EquipmentId" />
+                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="submit" value="verkopen" />
+                }
+            }
+            else
+            {
+                <h2>Hands</h2>
+                <p>Geen item in deze catogory</p>
+            }
         </div>
         <div class="equipment">
 
+            @if (ViewBag.Feet != null)
+            {
+                var item = ViewBag.Feet;
+                <h3>@item.Category: @item.Name</h3>
+                <ul>
+                    <li>Agility: @item.Agility</li>
+                    <li>Strength: @item.Strength</li>
+                    <li>Intelligence: @item.Intelligence</li>
+                </ul>
+                @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
+                {
+                    <input type="hidden" name="itemId" value="@item.EquipmentId" />
+                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="submit" value="verkopen" />
+                }
+            }
+            else
+            {
+                <h2>Feet</h2>
+                <p>Geen item in deze catogory</p>
+            }
         </div>
     </div>
     <div class="column">
@@ -48,49 +95,99 @@
     <div class="column">
         <div class="equipment">
 
+            @if (ViewBag.Necklace != null)
+            {
+                var item = ViewBag.Necklace;
+                <h3>@item.Category: @item.Name</h3>
+                <ul>
+                    <li>Agility: @item.Agility</li>
+                    <li>Strength: @item.Strength</li>
+                    <li>Intelligence: @item.Intelligence</li>
+                </ul>
+                @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
+                {
+                    <input type="hidden" name="itemId" value="@item.EquipmentId" />
+                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="submit" value="verkopen" />
+                }
+            }
+            else
+            {
+        <h2>Necklace</h2>
+                <p>Geen item in deze catogory</p>
+            }
         </div>
         <div class="equipment">
 
+            @if (ViewBag.Chest != null)
+            {
+                var item = ViewBag.Chest;
+                <h3>@item.Category: @item.Name</h3>
+                <ul>
+                    <li>Agility: @item.Agility</li>
+                    <li>Strength: @item.Strength</li>
+                    <li>Intelligence: @item.Intelligence</li>
+                </ul>
+                @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
+                {
+                    <input type="hidden" name="itemId" value="@item.EquipmentId" />
+                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="submit" value="verkopen" />
+                }
+            }
+            else
+            {
+                <h2>Chest</h2>
+                <p>Geen item in deze catogory</p>
+            }
         </div>
         <div class="equipment">
+            @if (ViewBag.Ring != null)
+            {
+                var item = ViewBag.Ring;
+                <h3>@item.Category: @item.Name</h3>
+                <ul>
+                    <li>Agility: @item.Agility</li>
+                    <li>Strength: @item.Strength</li>
+                    <li>Intelligence: @item.Intelligence</li>
+                </ul>
+                @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
+                {
+                    <input type="hidden" name="itemId" value="@item.EquipmentId" />
+                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="submit" value="verkopen" />
+                }
+            }
+            else
+            {
+                <h2>Ring</h2>
+                <p>Geen item in deze catogory</p>
+            }
 
         </div>
     </div>
 </div>
-
-<p>Deze Ninja Bezit:</p>
-@{ foreach (var item in ViewBag.NinjaEquipment)
-    {
-        <p> @item.Name</p>
-        @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
-        {
-            <input type="hidden" name="itemId" value="@item.EquipmentId" />
-            <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
-            <input type="submit" value="verkopen" />
-        }
-    }
-}
-
-<p>De Shop Bezit:</p>
+<h1>Shop</h1>
 @{ foreach (var item in ViewBag.BuyAbleEquipment)
     {
-        <p>@item.Name</p>
-        @using (Html.BeginForm("BuyItem", "Ninja", FormMethod.Post))
-        {
-            <input type="hidden" name="itemId" value="@item.EquipmentId" />
-            <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
-            <input type="submit" value="kopen" />
-        }
+        <p class="error">@ViewBag.Error</p>
+        <div class="itemInShop">
+            <p>@item.Name</p>
+            <p>@item.Value goud</p>
+            <ul>
+                <li>Agility: @item.Agility</li>
+                <li>Strength: @item.Strength</li>
+                <li>Intelligence: @item.Intelligence</li>
+            </ul>
+            @using (Html.BeginForm("BuyItem", "Ninja", FormMethod.Post))
+            {
+                <input type="hidden" name="itemId" value="@item.EquipmentId" />
+                <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                <input type="submit" value="kopen" class="Shopknop" />
+            }
+        </div>
+
 
     }
 }
 
-
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
