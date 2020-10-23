@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Xml.Schema;
 
 namespace NinjaStore.Data
 {
@@ -71,11 +72,25 @@ namespace NinjaStore.Data
 			}
 		}
 
-		public List<Equipment> buyAbleEquipment(int ninjaId)
+        public int getWorth(int value)
+        {
+			int total = 0;
+            foreach(var item in ShowEquipment(value)) {
+				total = total + item.Value;
+            }
+			return total;
+        }
+
+        public List<Equipment> buyAbleEquipment(int ninjaId, Category category)
 		{
 			using (var context = new NinjaStoreDbContext())
 			{
-				var result = context.Equipment.ToList().Where(n => ShowEquipment(ninjaId).All(n2 => n2.EquipmentId != n.EquipmentId));
+				IEnumerable<Equipment> result ;
+				if(category == null)
+                {
+					result = context.Equipment.ToList().Where(n => ShowEquipment(ninjaId).All(n2 => n2.EquipmentId != n.EquipmentId));
+				}
+				result = context.Equipment.ToList().Where(n => ShowEquipment(ninjaId).All(n2 => n2.EquipmentId != n.EquipmentId)).Where(e => e.Category.Equals(category));
 
 				return result.ToList();
 			}

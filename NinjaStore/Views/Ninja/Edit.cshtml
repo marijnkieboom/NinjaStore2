@@ -7,11 +7,13 @@
 
 <h1>@Model.Name </h1>
 <h2>Goud: @Model.Gold</h2>
+<h2>Waarde inventory: @ViewBag.Worth</h2>
 <ul>
     <li>Agility: @ViewBag.Agility</li>
     <li>Strength: @ViewBag.Strength</li>
     <li>Intelligence: @ViewBag.Intelligence</li>
 </ul>
+
 <hr />
 
 @{
@@ -173,9 +175,23 @@
         </div>
     </div>
 </div>
+@using (Html.BeginForm("SellAll", "Ninja", FormMethod.Post))
+{
+    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+    <input type="submit" value="alles verkopen" />
+}
 <h1>Shop</h1>
-@{ foreach (var item in ViewBag.BuyAbleEquipment)
+@using (Html.BeginForm("Edit", "Ninja", FormMethod.Get))
+{
+    <input type="hidden" value="@Model.NinjaId" name="id">
+    <select name="category" asp-items="Html.GetEnumSelectList<NinjaStore.Data.Models.Category>()" style="margin-bottom: 10px">
+        <option selected="selected">Selecteren</option>
+    </select>
+    <input type="submit" value="filteren"/>
+}
+@{foreach (var item in ViewBag.BuyAbleEquipment)
     {
+
         <div class="itemInShop">
             <p>@item.Name</p>
             <p>@item.Value goud</p>

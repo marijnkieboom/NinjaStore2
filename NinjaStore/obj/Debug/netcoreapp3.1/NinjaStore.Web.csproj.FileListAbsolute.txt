@@ -290,11 +290,8 @@ C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.TagHelpers.input.cache
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.TagHelpers.output.cache
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.RazorCoreGenerate.cache
-C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Create.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Delete.cshtml.g.cs
-C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Edit.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Index.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -311,7 +308,6 @@ C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.pdb
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.genruntimeconfig.cache
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Index.cshtml.g.cs
-C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Create.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Delete.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Details.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Edit.cshtml.g.cs
@@ -320,3 +316,6 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debu
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Index.cshtml.g.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Create.cshtml.g.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Edit.cshtml.g.cs
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Create.cshtml.g.cs
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Edit.cshtml.g.cs
+C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\NinjaEdit.cshtml.g.cs

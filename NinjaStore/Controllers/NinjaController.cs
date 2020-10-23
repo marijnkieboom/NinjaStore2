@@ -14,6 +14,38 @@ namespace NinjaStore.Controllers
 		{
 			return View(ninjaRepositorySql.GetAll());
 		}
+		public IActionResult NinjaEdit(int? id)
+		{
+			if (!id.HasValue)
+			{
+				return RedirectToAction("NinjaEdit");
+			}
+
+			var ninja = ninjaRepositorySql.GetOne(id.Value);
+			if (ninja == null)
+			{
+				return RedirectToAction("Index");
+			}
+
+			ninjaEquipmentRepositorySql.ShowEquipment(id.Value);
+
+
+			return View(ninja);
+		}
+		[HttpPost]
+		public IActionResult NinjaEdit(int id, Ninja ninja)
+		{
+			if (id != ninja.NinjaId)
+			{
+				return RedirectToAction("Index");
+			}
+			if (ModelState.IsValid)
+			{
+				ninjaRepositorySql.Update(ninja);
+				return RedirectToAction("Index");
+			}
+			return View(ninja);
+		}
 
 		public IActionResult Create()
 		{
@@ -27,14 +59,17 @@ namespace NinjaStore.Controllers
 			return RedirectToAction("Index");
 		}
 
-		public IActionResult Edit(int? id)
+		public IActionResult Edit(int? id, Category category)
 		{
 			if (id.HasValue)
 			{
 				var ninja = ninjaRepositorySql.GetOne(id.Value);
+				ViewBag.BuyAbleEquipment = ninjaEquipmentRepositorySql.buyAbleEquipment(id.Value, category);
+
+				
 				ViewBag.NinjaEquipment = ninjaEquipmentRepositorySql.ShowEquipment(id.Value);
 				ViewBag.AllEquipment = equipmentRepositorySql.GetAll();
-				ViewBag.BuyAbleEquipment = ninjaEquipmentRepositorySql.buyAbleEquipment(id.Value);
+				
 				ViewBag.Head = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Head);
 				ViewBag.Hands = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Hand);
 				ViewBag.Feet = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Feet);
@@ -44,6 +79,7 @@ namespace NinjaStore.Controllers
 				ViewBag.Strength = ninjaEquipmentRepositorySql.getPoints(id.Value, "Strength");
 				ViewBag.Agility = ninjaEquipmentRepositorySql.getPoints(id.Value, "Agility");
 				ViewBag.Intelligence = ninjaEquipmentRepositorySql.getPoints(id.Value, "Intelligence");
+				ViewBag.Worth = ninjaEquipmentRepositorySql.getWorth(id.Value);
 				return View(ninja);
 			}
 			return RedirectToAction("Index");
@@ -144,5 +180,17 @@ namespace NinjaStore.Controllers
 			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
 				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
 		}
+		[HttpPost]
+		public IActionResult SellAll(int ninjaId)
+		{
+			foreach(var item in ninjaEquipmentRepositorySql.ShowEquipment(ninjaId))
+            {
+				SellItem(item.EquipmentId, ninjaId);
+            }
+			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
+				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
+		}
+		
+
 	}
 }

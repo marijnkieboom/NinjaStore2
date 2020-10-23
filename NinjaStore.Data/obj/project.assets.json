@@ -7284,23 +7284,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gebruiker\\.nuget\\packages\\": {},
-    "C:\\PROGRAM FILES\\DOTNET\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\woutp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore2\\NinjaStore.Data\\NinjaStore.Data.csproj",
+      "projectUniqueName": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore.Data\\NinjaStore.Data.csproj",
       "projectName": "NinjaStore.Data",
-      "projectPath": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore2\\NinjaStore.Data\\NinjaStore.Data.csproj",
-      "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-      "outputPath": "E:\\Documents\\School\\Avans\\Jaar 2\\PRG5\\NinjaStore\\NinjaStore2\\NinjaStore.Data\\obj\\",
+      "projectPath": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore.Data\\NinjaStore.Data.csproj",
+      "packagesPath": "C:\\Users\\woutp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\woutp\\Google Drive\\vakken\\5 - prog5\\eindproject\\NinjaStore2\\NinjaStore.Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\PROGRAM FILES\\DOTNET\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\woutp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7362,7 +7358,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

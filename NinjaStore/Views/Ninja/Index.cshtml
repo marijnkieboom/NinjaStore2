@@ -38,7 +38,9 @@
             </td>
             <td>
                 @Html.ActionLink("Winkelen", "Edit", new { id = item.NinjaId }) |
+                @Html.ActionLink("Bewerken", "NinjaEdit", new { id = item.NinjaId }) |
                 @Html.ActionLink("Verwijderen", "Delete", new { id = item.NinjaId })
+
             </td>
         </tr>
 }

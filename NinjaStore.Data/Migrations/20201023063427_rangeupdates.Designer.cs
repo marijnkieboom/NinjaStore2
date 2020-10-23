@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NinjaStore.Data;
 
 namespace NinjaStore.Data.Migrations
 {
     [DbContext(typeof(NinjaStoreDbContext))]
-    partial class NinjaStoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201023063427_rangeupdates")]
+    partial class rangeupdates
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,88 +49,6 @@ namespace NinjaStore.Data.Migrations
                     b.HasKey("EquipmentId");
 
                     b.ToTable("Equipment");
-
-                    b.HasData(
-                        new
-                        {
-                            EquipmentId = 1,
-                            Agility = 40,
-                            Category = 0,
-                            Intelligence = 40,
-                            Name = "Petje",
-                            Strength = 30,
-                            Value = 100
-                        },
-                        new
-                        {
-                            EquipmentId = 2,
-                            Agility = 86,
-                            Category = 3,
-                            Intelligence = 34,
-                            Name = "Broek",
-                            Strength = 32,
-                            Value = 150
-                        },
-                        new
-                        {
-                            EquipmentId = 3,
-                            Agility = 18,
-                            Category = 0,
-                            Intelligence = 40,
-                            Name = "Hoed",
-                            Strength = 16,
-                            Value = 200
-                        },
-                        new
-                        {
-                            EquipmentId = 4,
-                            Agility = 10,
-                            Category = 5,
-                            Intelligence = 10,
-                            Name = "Kettingkje",
-                            Strength = 60,
-                            Value = 50
-                        },
-                        new
-                        {
-                            EquipmentId = 5,
-                            Agility = 49,
-                            Category = 3,
-                            Intelligence = 309,
-                            Name = "Crocs",
-                            Strength = 98,
-                            Value = 100
-                        },
-                        new
-                        {
-                            EquipmentId = 6,
-                            Agility = 56,
-                            Category = 4,
-                            Intelligence = 86,
-                            Name = "Vuurring",
-                            Strength = 453,
-                            Value = 200
-                        },
-                        new
-                        {
-                            EquipmentId = 7,
-                            Agility = 76,
-                            Category = 2,
-                            Intelligence = 122,
-                            Name = "Schoenhand",
-                            Strength = 80,
-                            Value = 300
-                        },
-                        new
-                        {
-                            EquipmentId = 8,
-                            Agility = 469,
-                            Category = 1,
-                            Intelligence = 67,
-                            Name = "Shirt",
-                            Strength = 76,
-                            Value = 100
-                        });
                 });
 
             modelBuilder.Entity("NinjaStore.Data.Models.Ninja", b =>
