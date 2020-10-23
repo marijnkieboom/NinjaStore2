@@ -22,8 +22,15 @@ namespace NinjaStore.Web.Controllers
 		[HttpPost]
 		public IActionResult Create(Equipment equipment)
 		{
-			equipmentRepository.Create(equipment);
-			return RedirectToAction("Index");
+			if (ModelState.IsValid)
+			{
+				equipmentRepository.Create(equipment);
+				return RedirectToAction("Index");
+			}
+			else
+			{
+				return View(equipment);
+			}
 		}
 
 		public IActionResult Edit(int? id)
@@ -39,16 +46,23 @@ namespace NinjaStore.Web.Controllers
 		[HttpPost]
 		public IActionResult Edit(int id, Equipment equipment)
 		{
-			if (id != equipment.EquipmentId)
-			{
-				return RedirectToAction("Index");
-			}
 			if (ModelState.IsValid)
 			{
-				equipmentRepository.Update(equipment);
-				return RedirectToAction("Index");
+				if (id != equipment.EquipmentId)
+				{
+					return RedirectToAction("Index");
+				}
+				if (ModelState.IsValid)
+				{
+					equipmentRepository.Update(equipment);
+					return RedirectToAction("Index");
+				}
+				return View(equipment);
 			}
-			return View(equipment);
+			else
+			{
+				return View(equipment);
+			}
 		}
 
 		public IActionResult Details(int? id)
@@ -93,6 +107,5 @@ namespace NinjaStore.Web.Controllers
 			equipmentRepository.Delete(id);
 			return RedirectToAction("Index");
 		}
-
 	}
 }

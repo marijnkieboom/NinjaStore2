@@ -319,3 +319,4 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debu
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Equipment\Create.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Edit.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\NinjaEdit.cshtml.g.cs
+E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\NinjaEdit.cshtml.g.cs

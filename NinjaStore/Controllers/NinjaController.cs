@@ -35,16 +35,23 @@ namespace NinjaStore.Controllers
 		[HttpPost]
 		public IActionResult NinjaEdit(int id, Ninja ninja)
 		{
-			if (id != ninja.NinjaId)
-			{
-				return RedirectToAction("Index");
-			}
 			if (ModelState.IsValid)
 			{
-				ninjaRepositorySql.Update(ninja);
-				return RedirectToAction("Index");
+				if (id != ninja.NinjaId)
+				{
+					return RedirectToAction("Index");
+				}
+				if (ModelState.IsValid)
+				{
+					ninjaRepositorySql.Update(ninja);
+					return RedirectToAction("Index");
+				}
+				return View(ninja);
 			}
-			return View(ninja);
+			else
+			{
+				return View(ninja);
+			}
 		}
 
 		public IActionResult Create()
@@ -55,8 +62,16 @@ namespace NinjaStore.Controllers
 		[HttpPost]
 		public IActionResult Create(Ninja ninja)
 		{
-			ninjaRepositorySql.Create(ninja);
-			return RedirectToAction("Index");
+			if (ModelState.IsValid)
+			{
+				ninjaRepositorySql.Create(ninja);
+				return RedirectToAction("Index");
+			}
+			else
+			{
+				return RedirectToAction("Create", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
+					new { controller = "Ninja", action = "Create", Id = ninja.NinjaId }));
+			}
 		}
 
 		public IActionResult Edit(int? id, Category category)
@@ -88,16 +103,23 @@ namespace NinjaStore.Controllers
 		[HttpPost]
 		public IActionResult Edit(int id, Ninja ninja)
 		{
-			if (id != ninja.NinjaId)
-			{
-				return RedirectToAction("Index");
-			}
 			if (ModelState.IsValid)
 			{
-				ninjaRepositorySql.Update(ninja);
-				return RedirectToAction("Index");
+				if (id != ninja.NinjaId)
+				{
+					return RedirectToAction("Index");
+				}
+				if (ModelState.IsValid)
+				{
+					ninjaRepositorySql.Update(ninja);
+					return RedirectToAction("Index");
+				}
+				return View(ninja);
 			}
-			return View(ninja);
+			else
+			{
+				return View(ninja);
+			}
 		}
 
 		public IActionResult Details(int? id)
@@ -180,6 +202,7 @@ namespace NinjaStore.Controllers
 			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
 				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
 		}
+
 		[HttpPost]
 		public IActionResult SellAll(int ninjaId)
 		{
@@ -190,7 +213,5 @@ namespace NinjaStore.Controllers
 			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
 				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
 		}
-		
-
 	}
 }
