@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<NinjaStore.Data.Models.Ninja>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Ninja lijst";
 }
 
-<h1>Index</h1>
+<h1>Ninja lijst</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Nieuwe Ninja toevoegen</a>
 </p>
 <table class="table">
     <thead>
@@ -37,8 +37,8 @@
                 @Html.DisplayFor(modelItem => item.Gold)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.NinjaId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.NinjaId })
+                @Html.ActionLink("Winkelen", "Edit", new { id = item.NinjaId }) |
+                @Html.ActionLink("Verwijderen", "Delete", new { id = item.NinjaId })
             </td>
         </tr>
 }

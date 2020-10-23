@@ -123,5 +123,8 @@ img {
 }
 
 .error {
-    color:red;
+    color: white;
+    background-color: #cc0000;
+    padding: 5px;
+    border-radius: 10px;
 }

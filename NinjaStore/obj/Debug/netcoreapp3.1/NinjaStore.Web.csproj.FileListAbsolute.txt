@@ -56,8 +56,6 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\bin\Debu
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.TagHelpers.input.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.TagHelpers.output.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.RazorCoreGenerate.cache
-E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -153,7 +151,6 @@ E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debu
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\NinjaStore.Web.genruntimeconfig.cache
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Index.cshtml.g.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Create.cshtml.g.cs
-E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Details.cshtml.g.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Edit.cshtml.g.cs
 E:\Documents\School\Avans\Jaar 2\PRG5\NinjaStore\NinjaStore2\NinjaStore\obj\Debug\netcoreapp3.1\Razor\Views\Ninja\Delete.cshtml.g.cs
 C:\Users\woutp\Google Drive\vakken\5 - prog5\eindproject\NinjaStore2\NinjaStore\bin\Debug\netcoreapp3.1\appsettings.Development.json

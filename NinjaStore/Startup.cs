@@ -45,7 +45,7 @@ namespace NinjaStore
 			{
 				endpoints.MapControllerRoute(
 					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
+					pattern: "{controller=Ninja}/{action=Index}/{id?}");
 			});
 		}
 	}

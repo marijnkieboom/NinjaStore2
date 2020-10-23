@@ -1,7 +1,7 @@
 ﻿@model NinjaStore.Data.Models.Ninja
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Ninja winkel";
 }
 
 
@@ -14,6 +14,12 @@
 </ul>
 <hr />
 
+@{
+    if (TempData["Error"] != null)
+    {
+        <p class="error">@TempData["Error"].ToString()</p>
+    }
+}
 
 <div class="row">
     <div class="column">
@@ -113,7 +119,7 @@
             }
             else
             {
-        <h2>Necklace</h2>
+                <h2>Necklace</h2>
                 <p>Geen item in deze catogory</p>
             }
         </div>
@@ -170,7 +176,6 @@
 <h1>Shop</h1>
 @{ foreach (var item in ViewBag.BuyAbleEquipment)
     {
-        <p class="error">@ViewBag.Error</p>
         <div class="itemInShop">
             <p>@item.Name</p>
             <p>@item.Value goud</p>

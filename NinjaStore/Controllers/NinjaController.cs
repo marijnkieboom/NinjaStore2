@@ -12,7 +12,6 @@ namespace NinjaStore.Controllers
 		readonly NinjaEquipmentRepositorySql ninjaEquipmentRepositorySql = new NinjaEquipmentRepositorySql();
 		public IActionResult Index()
 		{
-
 			return View(ninjaRepositorySql.GetAll());
 		}
 
@@ -118,20 +117,25 @@ namespace NinjaStore.Controllers
 			Equipment item = equipmentRepositorySql.GetOne(itemId);
 			if (ninja.Gold >= item.Value)
 			{
-				if(ninjaEquipmentRepositorySql.getOneItem(ninjaId, item.Category) ==null)
+				if(ninjaEquipmentRepositorySql.getOneItem(ninjaId, item.Category) == null)
                 {
 					ninjaEquipmentRepositorySql.BuyEquipment(ninjaId, itemId);
+					TempData["Error"] = null;
 				}
 				else
                 {
 					//heeft dit item al
+					TempData["Error"] = "Ninja heeft al een item van dezelfde categorie";
                 }
+			}
+			else
+			{
 				// te weinig  geld
+				TempData["Error"] = "Ninja heeft te weinig goud";
 			}
 			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
 					new { controller = "Ninja", action = "Edit", Id = ninjaId }));
 		}
-
 
 		[HttpPost]
 		public IActionResult SellItem(int itemId, int ninjaId)
@@ -140,9 +144,5 @@ namespace NinjaStore.Controllers
 			return RedirectToAction("Edit", new Microsoft.AspNetCore.Routing.RouteValueDictionary(
 				new { controller = "Ninja", action = "Edit", Id = ninjaId }));
 		}
-
-	
-
-
 	}
 }
