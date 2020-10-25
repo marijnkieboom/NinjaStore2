@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Identity;
 using NinjaStore.Data;
 using NinjaStore.Data.Models;
+using NinjaStore.Web.Models;
 
 namespace NinjaStore.Controllers
 {
@@ -78,24 +79,23 @@ namespace NinjaStore.Controllers
 		{
 			if (id.HasValue)
 			{
+				ShopViewModel model = new ShopViewModel();
 				var ninja = ninjaRepositorySql.GetOne(id.Value);
-				ViewBag.BuyAbleEquipment = ninjaEquipmentRepositorySql.buyAbleEquipment(id.Value, category);
-
-				
-				ViewBag.NinjaEquipment = ninjaEquipmentRepositorySql.ShowEquipment(id.Value);
-				ViewBag.AllEquipment = equipmentRepositorySql.GetAll();
-				
-				ViewBag.Head = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Head);
-				ViewBag.Hands = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Hand);
-				ViewBag.Feet = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Feet);
-				ViewBag.Necklace = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Necklace);
-				ViewBag.Chest = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Chest);
-				ViewBag.Ring = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Ring);
-				ViewBag.Strength = ninjaEquipmentRepositorySql.getPoints(id.Value, "Strength");
-				ViewBag.Agility = ninjaEquipmentRepositorySql.getPoints(id.Value, "Agility");
-				ViewBag.Intelligence = ninjaEquipmentRepositorySql.getPoints(id.Value, "Intelligence");
-				ViewBag.Worth = ninjaEquipmentRepositorySql.getWorth(id.Value);
-				return View(ninja);
+				model.CurrentNinja = ninja;
+				model.BuyAbleEquipment = ninjaEquipmentRepositorySql.buyAbleEquipment(id.Value, category);
+				model.NinjaEquipment = ninjaEquipmentRepositorySql.ShowEquipment(id.Value);
+				model.AllEquipment = equipmentRepositorySql.GetAll();
+				model.Head = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Head);
+				model.Hands = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Hand);
+				model.Feet = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Feet);
+				model.Necklace = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Necklace);
+				model.Chest = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Chest);
+				model.Ring = ninjaEquipmentRepositorySql.getOneItem(id.Value, Category.Ring);
+				model.Strength = ninjaEquipmentRepositorySql.getPoints(id.Value, "Strength");
+				model.Agility = ninjaEquipmentRepositorySql.getPoints(id.Value, "Agility");
+				model.Intelligence = ninjaEquipmentRepositorySql.getPoints(id.Value, "Intelligence");
+				model.Worth = ninjaEquipmentRepositorySql.getWorth(id.Value);
+				return View(model);
 			}
 			return RedirectToAction("Index");
 		}
