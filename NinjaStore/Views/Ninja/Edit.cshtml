@@ -1,17 +1,17 @@
-﻿@model NinjaStore.Data.Models.Ninja
+﻿@model NinjaStore.Web.Models.ShopViewModel;
 
 @{
     ViewData["Title"] = "Ninja winkel";
 }
 
 
-<h1>@Model.Name </h1>
-<h2>Goud: @Model.Gold</h2>
-<h2>Waarde inventory: @ViewBag.Worth</h2>
+<h1>@Model.CurrentNinja.Name </h1>
+<h2>Goud: @Model.CurrentNinja.Gold</h2>
+<h2>Waarde inventory: @Model.Worth</h2>
 <ul>
-    <li>Agility: @ViewBag.Agility</li>
-    <li>Strength: @ViewBag.Strength</li>
-    <li>Intelligence: @ViewBag.Intelligence</li>
+    <li>Agility: @Model.Agility</li>
+    <li>Strength: @Model.Strength</li>
+    <li>Intelligence: @Model.Intelligence</li>
 </ul>
 
 <hr />
@@ -26,9 +26,9 @@
 <div class="row">
     <div class="column">
         <div class="equipment">
-            @if (ViewBag.Head != null)
+            @if (Model.Head != null)
             {
-                var item = ViewBag.Head;
+                var item = Model.Head;
                 <h3>@item.Category: @item.Name</h3>
                 <ul>
                     <li>Agility: @item.Agility</li>
@@ -38,7 +38,7 @@
                 @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
                 {
                     <input type="hidden" name="itemId" value="@item.EquipmentId" />
-                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="hidden" name="ninjaId" value="@Model.CurrentNinja.NinjaId" />
                     <input type="submit" value="verkopen" />
                 }
             }
@@ -50,9 +50,9 @@
         </div>
         <div class="equipment">
 
-            @if (ViewBag.Hands != null)
+            @if (Model.Hands != null)
             {
-                var item = ViewBag.Hands;
+                var item = Model.Hands;
                 <h3>@item.Category: @item.Name</h3>
                 <ul>
                     <li>Agility: @item.Agility</li>
@@ -62,7 +62,7 @@
                 @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
                 {
                     <input type="hidden" name="itemId" value="@item.EquipmentId" />
-                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="hidden" name="ninjaId" value="@Model.CurrentNinja.NinjaId" />
                     <input type="submit" value="verkopen" />
                 }
             }
@@ -74,9 +74,9 @@
         </div>
         <div class="equipment">
 
-            @if (ViewBag.Feet != null)
+            @if (Model.Feet != null)
             {
-                var item = ViewBag.Feet;
+                var item = Model.Feet;
                 <h3>@item.Category: @item.Name</h3>
                 <ul>
                     <li>Agility: @item.Agility</li>
@@ -86,7 +86,7 @@
                 @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
                 {
                     <input type="hidden" name="itemId" value="@item.EquipmentId" />
-                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="hidden" name="ninjaId" value="@Model.CurrentNinja.NinjaId" />
                     <input type="submit" value="verkopen" />
                 }
             }
@@ -103,9 +103,9 @@
     <div class="column">
         <div class="equipment">
 
-            @if (ViewBag.Necklace != null)
+            @if (Model.Necklace != null)
             {
-                var item = ViewBag.Necklace;
+                var item = Model.Necklace;
                 <h3>@item.Category: @item.Name</h3>
                 <ul>
                     <li>Agility: @item.Agility</li>
@@ -115,7 +115,7 @@
                 @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
                 {
                     <input type="hidden" name="itemId" value="@item.EquipmentId" />
-                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="hidden" name="ninjaId" value="@Model.CurrentNinja.NinjaId" />
                     <input type="submit" value="verkopen" />
                 }
             }
@@ -127,9 +127,9 @@
         </div>
         <div class="equipment">
 
-            @if (ViewBag.Chest != null)
+            @if (Model.Chest != null)
             {
-                var item = ViewBag.Chest;
+                var item = Model.Chest;
                 <h3>@item.Category: @item.Name</h3>
                 <ul>
                     <li>Agility: @item.Agility</li>
@@ -139,7 +139,7 @@
                 @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
                 {
                     <input type="hidden" name="itemId" value="@item.EquipmentId" />
-                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="hidden" name="ninjaId" value="@Model.CurrentNinja.NinjaId" />
                     <input type="submit" value="verkopen" />
                 }
             }
@@ -150,9 +150,9 @@
             }
         </div>
         <div class="equipment">
-            @if (ViewBag.Ring != null)
+            @if (Model.Ring != null)
             {
-                var item = ViewBag.Ring;
+                var item = Model.Ring;
                 <h3>@item.Category: @item.Name</h3>
                 <ul>
                     <li>Agility: @item.Agility</li>
@@ -162,7 +162,7 @@
                 @using (Html.BeginForm("SellItem", "Ninja", FormMethod.Post))
                 {
                     <input type="hidden" name="itemId" value="@item.EquipmentId" />
-                    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                    <input type="hidden" name="ninjaId" value="@Model.CurrentNinja.NinjaId" />
                     <input type="submit" value="verkopen" />
                 }
             }
@@ -177,19 +177,19 @@
 </div>
 @using (Html.BeginForm("SellAll", "Ninja", FormMethod.Post))
 {
-    <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+    <input type="hidden" name="ninjaId" value="@Model.CurrentNinja.NinjaId" />
     <input type="submit" value="alles verkopen" />
 }
 <h1>Shop</h1>
 @using (Html.BeginForm("Edit", "Ninja", FormMethod.Get))
 {
-    <input type="hidden" value="@Model.NinjaId" name="id">
+    <input type="hidden" value="@Model.CurrentNinja.NinjaId" name="id">
     <select name="category" asp-items="Html.GetEnumSelectList<NinjaStore.Data.Models.Category>()" style="margin-bottom: 10px">
         <option selected="selected">Selecteren</option>
     </select>
     <input type="submit" value="filteren"/>
 }
-@{foreach (var item in ViewBag.BuyAbleEquipment)
+@{foreach (var item in Model.BuyAbleEquipment)
     {
 
         <div class="itemInShop">
@@ -203,7 +203,7 @@
             @using (Html.BeginForm("BuyItem", "Ninja", FormMethod.Post))
             {
                 <input type="hidden" name="itemId" value="@item.EquipmentId" />
-                <input type="hidden" name="ninjaId" value="@Model.NinjaId" />
+                <input type="hidden" name="ninjaId" value="@Model.CurrentNinja.NinjaId" />
                 <input type="submit" value="kopen" class="Shopknop" />
             }
         </div>
